@@ -1,0 +1,103 @@
+input, table, tr, td, select {
+    border-radius: 4px;
+}
+
+select {
+    overflow: hidden;
+    fill-rule: disabled;
+    border: 0px;
+}
+
+#input>td {
+    text-align: center;
+}
+
+th {
+    border: 1px solid #aaa;
+}
+
+td {
+    text-align: left;
+    border: 1px solid #aaa;
+}
+
+td:hover {
+    background-color: #FF9;
+}
+
+.file, button {
+    position: relative;
+    display: inline-block;
+    background: #D0EEFF;
+    border: 1px solid #99D3F5;
+    border-radius: 4px;
+    padding: 4px 12px;
+    overflow: hidden;
+    color: #1E88C7;
+    text-decoration: none;
+    text-indent: 0;
+    line-height: 20px;
+    font-size: medium;
+}
+
+.file input {
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
+
+.file:hover, button:hover {
+    background: #AADFFD;
+    border-color: #78C3F3;
+    color: #004974;
+    text-decoration: none;
+}
+
+body {
+    background: #eee;
+}
+
+.div {
+    padding: 3px;
+    background: white;
+    border: 1px solid;
+    border-color: #ccc;
+    border-radius: 3px;
+    margin-bottom: 3px;
+    width: fit-content
+}
+
+.head {
+    background: #3d444c;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 60px;
+}
+
+img {
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.font {
+    font-family: 微软雅黑;
+}
+
+.main {
+    margin-left: 20%;
+    margin-top: 10%;
+    background-color: rgb(98, 119, 241);
+    display: none;
+    position: fixed;
+    z-index: 1;
+}
+
+/* .mainbox {
+    margin: 20%;
+} */
