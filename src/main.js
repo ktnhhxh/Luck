@@ -105,7 +105,7 @@ function 抽奖方案设置初始化() {
         var input_id = '抽奖方案-人员份额{0}'.format(人员ID.toString())
         人员ID += 1
         $('#抽奖方案-人员列表').html(
-            "{0}<li id={1} class='抽奖方案-人员'>{2}</li><input id='{3}'/>".format(
+            "{0}<tr><td><li id={1} class='抽奖方案-人员'>{2}</li></td><td><input size='2' id='{3}'/></td></tr>".format(
                 $('#抽奖方案-人员列表').html(),
                 id, name, input_id
             )

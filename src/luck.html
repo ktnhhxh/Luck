@@ -4,47 +4,44 @@
         <script src="jquery-3.3.1.js"></script>
         <script src="main.js"></script>
         <link rel="stylesheet" href="style.css">
+        <title>Luck</title>
     </head>
 
     <body>
-
-        <div class="main">
-            <div class="mainbox">
-                <table border="1">
+        <div >
+            <div >
+                <table border="1" class="main">
                     <tr>
                         <td>抽奖方案名称:</td>
                         <td><input id="抽奖方案-抽奖方案名称" placeholder="抽奖方案名称" /></td>
                     </tr>
                     <tr>
                         <td>奖项设置:</td>
-                        <td id="抽奖方案-奖项列表"></td>
+                        <td ><div id="抽奖方案-奖项列表" style="height: 100px; overflow-y:scroll"></div></td>
+                        <td>人员设置:</td>
+                        <td  ><div id="抽奖方案-人员列表" style="height: 100px; overflow-y:scroll"></div></td>
+
                     </tr>
                     <tr>
                         <td><button id="抽奖方案-奖项添加">奖项添加</button></td>
                         <td><input id="抽奖方案-奖的名称" placeholder="奖的名称" /></td>
-                    </tr>
-                    <tr>
-                        <td>人员设置:</td>
-                        <td id="抽奖方案-人员列表">
-                        </td>
-                    </tr>
-                    <tr>
                         <td><button id="抽奖方案-人员添加">人员添加</button></td>
                         <td><input id="抽奖方案-人的名称" placeholder="人的名称" /></td>
                     </tr>
+
                     <tr>
-                        <td><button id="抽奖方案-添加">添加</button></td>
-                        <td><button id="抽奖方案-保存">保存</button>
+                        <td colspan="2" align="center"><button id="抽奖方案-添加">添加</button></td>
+                        <td colspan="2" align="center"><button id="抽奖方案-保存">保存</button>
                             <button id="抽奖方案-清空">清空</button></td>
                     </tr>
                 </table>
             </div>
         </div>
 
-        <table border="1">
+        <table border="1" class="home">
             <!-- 第一行-->
             <tr>
-                <td><button id="添加抽奖方案">添加抽奖方案</button></td>
+                <td align="center"><button id="添加抽奖方案">添加抽奖方案</button></td>
                 <td><button id="抽奖">抽奖</button></td>
                 <td>
                     <div class="file"><input id="导入" type="file">导入</input>
@@ -54,19 +51,25 @@
             </tr>
             <!-- 第二行-->
             <tr>
-                <td colspan="2">
+                <td align="right">
+                    <p>当前抽奖：</p>
+                </td>
+                <td>
                     <p id="now-solution"></p>
                 </td>
             </tr>
             <!-- 第三行-->
             <tr>
-                <td colspan="4">
+                <td align="right">
+                    <p>抽奖号码：</p>
+                </td>
+                <td align="left">
                     <p id="名字"></p>
                 </td>
             </tr>
             <!-- 第四行-->
             <tr>
-                <td colspan="4"><button id="抽奖">抽奖</button></td>
+                <td colspan="4" align="center"><button id="抽奖">抽奖</button></td>
             </tr>
         </table>
         <a download="text.txt" id="下载"></a>
